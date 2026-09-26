@@ -1,0 +1,11 @@
+name: build action
+on:
+  push: 
+    branches: [main]
+jobs:
+  print-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo-hello
+        run: echo "Hello from build workflow"
+  
